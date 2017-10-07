@@ -1,0 +1,21 @@
+c:\users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe.config
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.pdb
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.csprojResolveAssemblyReference.cache
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.resources
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Properties.Resources.resources
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.csproj.GenerateResource.Cache
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.exe
+C:\Users\zhy\documents\visual studio 2013\Projects\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.pdb
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe.config
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.exe
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.pdb
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.pdb
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.csprojResolveAssemblyReference.cache
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.resources
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Properties.Resources.resources
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe.config
+C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.exe
+C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.pdb
