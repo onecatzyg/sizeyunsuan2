@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Resources;
+using System.Threading;
+using System.Globalization;
 
 namespace arithmetic_Operation
 {
@@ -15,11 +18,13 @@ namespace arithmetic_Operation
     {
         private int t; //用于获取秒数
         private int wrong_Number; //错误题数
+        private int nums_wrong; //当前错题数
         private int correct_Number; //正确题数
         private int problem_Nums; //总题数
         private int problem_Now;
-        private double score = 100; //题目得分
+        private int score = 100; //题目得分
         private string rightAns; //四则运算结果
+        private ResourceManager rm; //获取资源文件内容
         //文件路径（默认放在bin目录下）
         private string path="data.txt";
         private static string expression = null;
@@ -35,8 +40,8 @@ namespace arithmetic_Operation
         {
             //初始化对错数量
             this.init_Numbers();
-            label11.Text = correct_Number.ToString() + " 题";
-            label12.Text = wrong_Number.ToString() + " 题";
+            label11.Text = correct_Number.ToString();
+            label12.Text = wrong_Number.ToString();
             //初始化时间
             this.timer1.Enabled = false;
             this.timer1.Interval = 1000;//代表每秒改变一次时间
@@ -65,6 +70,7 @@ namespace arithmetic_Operation
             score = 100;
             //初始化运算式
             expression = "";
+            nums_wrong = 0;
             //计算四则运算式的正确结果 
             rightAns = new ExpressionHelper().getResOfPostfix();
             //显示第一道题目
@@ -77,6 +83,16 @@ namespace arithmetic_Operation
         /// </summary>
         private void button3_Click(object sender, EventArgs e)
         {
+            //获取用户输入
+            string userAns = textBox2.Text.ToString();
+            //如果输入不是数字,要求重输
+            if (!isNumberic(userAns))
+            {
+                MessageBox.Show(rm.GetString("message1"), rm.GetString("message2"),
+MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox2.Text = "";
+                return;
+            }
             button3.Enabled = false;
             button4.Enabled = true;
             //如果已经是最后一题
@@ -85,21 +101,19 @@ namespace arithmetic_Operation
                 button4.Enabled = false;
                 button2.Enabled = true;
             } 
-            //获取用户输入
-            string userAns = textBox2.Text.ToString();
             //判断对错,并改变对错题数量 
             if (userAns == rightAns){
-                label9.Text = "正确！";
+                label9.Text = rm.GetString("result1");
                 this.correct_Number++; //正确题数+1
-                label11.Text = correct_Number.ToString() + " 题";
+                label11.Text = correct_Number.ToString();
             }               
             else
             {
-                label9.Text ="不正确！正确答案= "+rightAns;
+                label9.Text = rm.GetString("result2") + rightAns;
                 this.wrong_Number++; //错误题数+1
-                label12.Text = wrong_Number.ToString() + " 题";
-                //扣分
-                score -= 100 * 1.0 / problem_Nums;
+                label12.Text = wrong_Number.ToString();
+                //当前错题数+1
+                nums_wrong += 1;
             }
         }
         /// <summary>
@@ -117,6 +131,7 @@ namespace arithmetic_Operation
             //显示第N道题目
             label5.Text = "题目" + problem_Now.ToString() + ":";
             label8.Text = expression;
+            textBox2.Text = "";
         }
         /// <summary>
         /// 结束答题，计算总得分
@@ -127,6 +142,7 @@ namespace arithmetic_Operation
             button1.Enabled = true;
             button2.Enabled = false;
             label7.Text = "";
+            score = 100 * (problem_Nums - nums_wrong) / problem_Nums;
             label9.Text = "本次得分为：" + score.ToString();
         }
         /// <summary>
@@ -146,6 +162,20 @@ namespace arithmetic_Operation
             string text = correct_Number.ToString() + "\r\n" + wrong_Number.ToString();
             sw.Write(text);
             sw.Close();
+        }
+        /// <summary>
+        /// 通过正则表达式判断输入是否为数字
+        /// </summary>
+        protected bool isNumberic(string message)
+        {
+            System.Text.RegularExpressions.Regex rex =
+            new System.Text.RegularExpressions.Regex(@"^(-?[0-9]+[/]?[0-9]*)$");
+            if (rex.IsMatch(message))
+            {
+                return true;
+            }
+            else
+                return false;
         }
         /// <summary>
         /// 从文件中获取对错数量
@@ -482,6 +512,67 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
+        private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            UpDataMainFormUILanguage();
+        }
+
+        //根据当前的语言区域，更新主窗口的语言信息
+        private void UpDataMainFormUILanguage()
+        {
+            rm = new ResourceManager(typeof(Form1));
+            UpDataForm1(rm);
+        }
+        //根据当前的语言区域，更新主窗口的语言
+        private void UpDataForm1(ResourceManager rm)
+        {
+            //菜单项
+            文件FToolStripMenuItem.Text = rm.GetString("start");
+            查看历史记录ToolStripMenuItem.Text = rm.GetString("history");
+            语言LToolStripMenuItem.Text = rm.GetString("language");
+            中文简体ToolStripMenuItem.Text = rm.GetString("zh-CHS");
+            中文繁体ToolStripMenuItem.Text = rm.GetString("zh-CHT");
+            英文ToolStripMenuItem.Text = rm.GetString("English");
+            帮助HToolStripMenuItem.Text = rm.GetString("help");
+            //按钮以及标签
+            label1.Text = rm.GetString("numbers");
+            label2.Text = rm.GetString("time_use");
+            label3.Text = rm.GetString("correct");
+            label4.Text = rm.GetString("wrong");
+            label5.Text = rm.GetString("question");
+            button3.Text = rm.GetString("submit");
+            button4.Text = rm.GetString("next");
+            button1.Text = rm.GetString("begin");
+            button2.Text = rm.GetString("end");
+        }
+
+        private void 中文简体ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+            UpDataMainFormUILanguage();
+        }
+
+        private void 中文繁体ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHT");
+            UpDataMainFormUILanguage();
+        }
+        //将对错数量清零
+        private void button5_Click(object sender, EventArgs e)
+        {
+            correct_Number = 0;
+            wrong_Number = 0;
+            //重置
+            StreamWriter sw = new StreamWriter(path, false);
+            string text = correct_Number.ToString() + "\r\n" + wrong_Number.ToString();
+            sw.Write(text);
+            sw.Close();
+            label11.Text = correct_Number.ToString();
+            label12.Text = wrong_Number.ToString();
+        }
+
 
     }
 }

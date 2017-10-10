@@ -117,10 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
+  <data name="begin" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="correct" xml:space="preserve">
+    <value>正确：</value>
+  </data>
+  <data name="end" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英文</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="history" xml:space="preserve">
+    <value>查看历史记录</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>下一题</value>
+  </data>
+  <data name="numbers" xml:space="preserve">
+    <value>题目数量：</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>题目：</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="time_use" xml:space="preserve">
+    <value>用时：</value>
+  </data>
+  <data name="wrong" xml:space="preserve">
+    <value>错误：</value>
+  </data>
+  <data name="zh-CHS" xml:space="preserve">
+    <value>中文简体</value>
+  </data>
+  <data name="zh-CHT" xml:space="preserve">
+    <value>中文繁体</value>
+  </data>
+  <data name="result1" xml:space="preserve">
+    <value>正确！</value>
+  </data>
+  <data name="result2" xml:space="preserve">
+    <value>不正确！正确答案=</value>
+  </data>
+  <data name="message1" xml:space="preserve">
+    <value>抱歉，您的输入不合法！</value>
+  </data>
+  <data name="message2" xml:space="preserve">
+    <value>输入错误</value>
+  </data>
 </root>

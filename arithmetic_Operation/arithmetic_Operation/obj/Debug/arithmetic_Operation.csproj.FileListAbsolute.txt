@@ -16,6 +16,15 @@ E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\
 E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.resources
 E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Properties.Resources.resources
 E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.csproj.GenerateResource.Cache
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\en\arithmetic_Operation.resources.dll
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\zh-CHS\arithmetic_Operation.resources.dll
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\bin\Debug\zh-CHT\arithmetic_Operation.resources.dll
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.en.resources
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.zh-CHS.resources
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.Form1.zh-CHT.resources
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\en\arithmetic_Operation.resources.dll
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\zh-CHS\arithmetic_Operation.resources.dll
+E:\高级软件工程\第三次作业\arithmetic_Operation\arithmetic_Operation\obj\Debug\zh-CHT\arithmetic_Operation.resources.dll
 C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\bin\Debug\arithmetic_Operation.exe.config
 C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.exe
 C:\Users\Administrator\Desktop\arithmetic_Operation\arithmetic_Operation\obj\Debug\arithmetic_Operation.pdb

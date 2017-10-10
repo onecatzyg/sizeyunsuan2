@@ -117,10 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
+  <data name="begin" xml:space="preserve">
+    <value>begin</value>
+  </data>
+  <data name="correct" xml:space="preserve">
+    <value>correct：</value>
+  </data>
+  <data name="end" xml:space="preserve">
+    <value>end</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="history" xml:space="preserve">
+    <value>history</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>language</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>next</value>
+  </data>
+  <data name="numbers" xml:space="preserve">
+    <value>numbers：</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>question：</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>start</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>submit</value>
+  </data>
+  <data name="time_use" xml:space="preserve">
+    <value>time：</value>
+  </data>
+  <data name="wrong" xml:space="preserve">
+    <value>wrong：</value>
+  </data>
+  <data name="zh-CHS" xml:space="preserve">
+    <value>zh-CHS</value>
+  </data>
+  <data name="zh-CHT" xml:space="preserve">
+    <value>zh-CHT</value>
+  </data>
+  <data name="result1" xml:space="preserve">
+    <value>Right！</value>
+  </data>
+  <data name="result2" xml:space="preserve">
+    <value>Wrong！The true answer is：</value>
+  </data>
+  <data name="message1" xml:space="preserve">
+    <value>Sorry, your input is not valid!</value>
+  </data>
+  <data name="message2" xml:space="preserve">
+    <value>Input error</value>
+  </data>
 </root>
